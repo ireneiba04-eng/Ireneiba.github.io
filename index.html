@@ -12,15 +12,21 @@
 
 <style>
 
+* {
+
+    box-sizing: border-box;
+
+}
+
 body {
 
     margin: 0;
 
     font-family: Arial, sans-serif;
 
-    color: #222;
+    color: #1f2937;
 
-    background: #f7f7f7;
+    background: #f8fafc;
 
     line-height: 1.6;
 
@@ -28,11 +34,25 @@ body {
 
 header {
 
-    background: #111;
+    background: #111827;
 
     color: white;
 
-    padding: 25px 8%;
+    padding: 22px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+header h1 {
+
+    margin: 0;
+
+    font-size: 22px;
 
 }
 
@@ -40,9 +60,15 @@ nav a {
 
     color: white;
 
-    margin-right: 20px;
-
     text-decoration: none;
+
+    margin-left: 22px;
+
+}
+
+nav a:hover {
+
+    text-decoration: underline;
 
 }
 
@@ -50,15 +76,39 @@ nav a {
 
     background: white;
 
-    padding: 90px 8%;
+    padding: 100px 8%;
+
+}
+
+.hero-content {
+
+    max-width: 900px;
+
+}
+
+.eyebrow {
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: #64748b;
 
 }
 
 .hero h2 {
 
-    font-size: 45px;
+    font-size: 52px;
 
-    max-width: 750px;
+    line-height: 1.1;
+
+    margin: 18px 0;
+
+    max-width: 850px;
 
 }
 
@@ -66,17 +116,75 @@ nav a {
 
     font-size: 20px;
 
-    max-width: 700px;
+    color: #64748b;
+
+    max-width: 750px;
+
+}
+
+.buttons {
+
+    margin-top: 30px;
+
+}
+
+.button {
+
+    display: inline-block;
+
+    padding: 13px 22px;
+
+    margin-right: 12px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+.primary {
+
+    background: #111827;
+
+    color: white;
+
+}
+
+.secondary {
+
+    border: 1px solid #cbd5e1;
+
+    color: #1f2937;
+
+    background: white;
 
 }
 
 section {
 
-    max-width: 1100px;
+    max-width: 1150px;
 
     margin: auto;
 
-    padding: 60px 8%;
+    padding: 80px 8%;
+
+}
+
+section h2 {
+
+    font-size: 34px;
+
+    margin-bottom: 20px;
+
+}
+
+.section-intro {
+
+    color: #64748b;
+
+    max-width: 750px;
 
 }
 
@@ -86,7 +194,9 @@ section {
 
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 
-    gap: 20px;
+    gap: 24px;
+
+    margin-top: 35px;
 
 }
 
@@ -94,21 +204,145 @@ section {
 
     background: white;
 
-    padding: 25px;
+    padding: 30px;
+
+    border: 1px solid #e2e8f0;
 
     border-radius: 10px;
 
 }
 
+.project h3 {
+
+    margin-top: 0;
+
+}
+
+.project p {
+
+    color: #64748b;
+
+}
+
+.project a {
+
+    color: #111827;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+}
+
+.approach {
+
+    background: #eef2f7;
+
+    max-width: none;
+
+}
+
+.approach-content {
+
+    max-width: 1150px;
+
+    margin: auto;
+
+    padding: 0 8%;
+
+}
+
+.framework {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    margin-top: 30px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+}
+
+.skills {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 25px;
+
+}
+
+.skill {
+
+    background: white;
+
+    border: 1px solid #dbe2ea;
+
+    padding: 10px 16px;
+
+    border-radius: 20px;
+
+}
+
+.contact {
+
+    background: white;
+
+    text-align: center;
+
+}
+
 footer {
 
-    background: #111;
+    background: #111827;
 
     color: white;
 
     text-align: center;
 
-    padding: 25px;
+    padding: 30px;
+
+}
+
+@media (max-width: 700px) {
+
+    header {
+
+        display: block;
+
+    }
+
+    nav {
+
+        margin-top: 15px;
+
+    }
+
+    nav a {
+
+        margin: 0 15px 0 0;
+
+    }
+
+    .hero h2 {
+
+        font-size: 38px;
+
+    }
+
+    .hero {
+
+        padding: 70px 8%;
+
+    }
 
 }
 
@@ -120,119 +354,305 @@ footer {
 
 <header>
 
-<h1>Irene Iba</h1>
+    <h1>Irene Iba</h1>
 
-<nav>
+    <nav>
 
-<a href="#about">About</a>
+        <a href="#about">About</a>
 
-<a href="#portfolio">Portfolio</a>
+        <a href="#portfolio">Portfolio</a>
 
-<a href="#approach">My Approach</a>
+        <a href="#approach">Approach</a>
 
-<a href="#contact">Contact</a>
+        <a href="#contact">Contact</a>
 
-</nav>
+    </nav>
 
 </header>
 
-<div class="hero">
+<section class="hero">
 
-<h2>Digital Marketing & Data-Driven Strategy</h2>
+    <div class="hero-content">
 
-<p>I’m an aspiring digital marketer focused on performance marketing, analytics, customer journeys, conversion optimization, and evidence-based decision-making.</p>
+        <div class="eyebrow">Digital Marketing Portfolio</div>
 
-</div>
+        <h2>Digital Marketing & Data-Driven Strategy</h2>
+
+        <p>
+
+            I analyze marketing performance, identify business problems,
+
+            and develop evidence-based strategies that improve customer
+
+            journeys and business decisions.
+
+        </p>
+
+        <div class="buttons">
+
+            <a class="button primary" href="#portfolio">View My Work</a>
+
+            <a class="button secondary" href="#approach">My Approach</a>
+
+        </div>
+
+    </div>
+
+</section>
 
 <section id="about">
 
-<h2>About Me</h2>
+    <h2>About Me</h2>
 
-<p>I’m building my career in digital marketing with a focus on performance marketing, marketing analytics, customer experience, and strategic decision-making.</p>
+    <p class="section-intro">
 
-<p>My approach is simple: investigate the evidence, identify the root cause, evaluate the risks, and make the strongest recommendation supported by the information available.</p>
+        I’m building my career in digital marketing with a focus on
+
+        performance marketing, marketing analytics, conversion optimization,
+
+        customer experience, and strategic decision-making.
+
+    </p>
+
+    <p class="section-intro">
+
+        My approach is to investigate the evidence, identify the root cause,
+
+        evaluate the potential risks and upside, and make recommendations
+
+        based on the information available.
+
+    </p>
 
 </section>
 
 <section id="portfolio">
 
-<h2>Portfolio</h2>
+    <h2>Selected Portfolio Projects</h2>
 
-<div class="projects">
+    <p class="section-intro">
 
-<div class="project">
+        Simulated business case studies demonstrating my approach to
 
-<h3>Conversion Rate Optimization</h3>
+        marketing analysis, problem solving, and strategic decision-making.
 
-<p>Analyzing an e-commerce sales decline and identifying the operational root cause through evidence-based investigation.</p>
+    </p>
 
-</div>
+    <div class="projects">
 
-<div class="project">
+        <div class="project">
 
-<h3>Marketing Budget Optimization</h3>
+            <h3>Conversion Rate Optimization</h3>
 
-<p>Evaluating multiple marketing channels and making strategic budget allocation recommendations.</p>
+            <p>
 
-</div>
+                Investigating declining e-commerce sales and identifying
 
-<div class="project">
+                the operational root cause through evidence-based analysis.
 
-<h3>Customer Journey & Attribution</h3>
+            </p>
 
-<p>Analyzing multi-channel customer behavior and attribution to improve marketing investment decisions.</p>
+            <a href="#">View Case Study →</a>
 
-</div>
+        </div>
 
-<div class="project">
+        <div class="project">
 
-<h3>Marketing Crisis Management</h3>
+            <h3>Marketing Budget Optimization</h3>
 
-<p>Prioritizing business problems through root cause analysis and cross-functional decision-making.</p>
+            <p>
 
-</div>
+                Evaluating multi-channel performance and recommending
 
-<div class="project">
+                strategic budget allocation under financial constraints.
 
-<h3>CRM & Marketing Automation</h3>
+            </p>
 
-<p>Designing customer lifecycle, segmentation, retention, and marketing automation strategies.</p>
+            <a href="#">View Case Study →</a>
 
-</div>
+        </div>
 
-<div class="project">
+        <div class="project">
 
-<h3>Executive Marketing Strategy</h3>
+            <h3>Customer Journey & Attribution</h3>
 
-<p>Applying an evidence-based framework to business decisions, risk evaluation, and strategic recommendations.</p>
+            <p>
 
-</div>
+                Analyzing customer interactions across multiple channels
 
-</div>
+                to understand how marketing contributes to conversions.
+
+            </p>
+
+            <a href="#">View Case Study →</a>
+
+        </div>
+
+        <div class="project">
+
+            <h3>Marketing Crisis Management</h3>
+
+            <p>
+
+                Prioritizing business problems through root cause analysis,
+
+                risk evaluation, and cross-functional decision-making.
+
+            </p>
+
+            <a href="#">View Case Study →</a>
+
+        </div>
+
+        <div class="project">
+
+            <h3>CRM & Marketing Automation</h3>
+
+            <p>
+
+                Developing customer lifecycle, segmentation, retention,
+
+                and marketing automation strategies.
+
+            </p>
+
+            <a href="#">View Case Study →</a>
+
+        </div>
+
+        <div class="project">
+
+            <h3>Executive Marketing Strategy</h3>
+
+            <p>
+
+                Applying evidence-based frameworks to evaluate uncertainty,
+
+                risk, business impact, and strategic recommendations.
+
+            </p>
+
+            <a href="#">View Case Study →</a>
+
+        </div>
+
+    </div>
 
 </section>
 
-<section id="approach">
+<div class="approach" id="approach">
 
-<h2>My Approach</h2>
+    <div class="approach-content">
 
-<p><strong>Define → Investigate → Analyze → Evaluate Risk → Recommend → Measure → Improve</strong></p>
+        <section>
 
-<p>I believe effective marketing decisions should be based on evidence rather than assumptions.</p>
+            <h2>My Decision-Making Approach</h2>
+
+            <p class="section-intro">
+
+                I believe strong marketing decisions come from understanding
+
+                the problem before immediately changing the solution.
+
+            </p>
+
+            <div class="framework">
+
+                Define → Investigate → Analyze → Evaluate Risk →
+
+                Recommend → Measure → Improve
+
+            </div>
+
+            <p>
+
+                I also evaluate decisions by asking three questions:
+
+            </p>
+
+            <p>
+
+                <strong>What is the potential upside?</strong><br>
+
+                How much could the business gain if the decision is correct?
+
+            </p>
+
+            <p>
+
+                <strong>What is the downside?</strong><br>
+
+                How much could the business lose if the decision is wrong?
+
+            </p>
+
+            <p>
+
+                <strong>Can the decision be reversed?</strong><br>
+
+                If it can, we can move faster. If it cannot, we slow down
+
+                and gather stronger evidence.
+
+            </p>
+
+        </section>
+
+    </div>
+
+</div>
+
+<section>
+
+    <h2>Core Skills</h2>
+
+    <div class="skills">
+
+        <div class="skill">Digital Marketing</div>
+
+        <div class="skill">Marketing Analytics</div>
+
+        <div class="skill">Conversion Optimization</div>
+
+        <div class="skill">Performance Marketing</div>
+
+        <div class="skill">Customer Journey Analysis</div>
+
+        <div class="skill">Attribution</div>
+
+        <div class="skill">CRM</div>
+
+        <div class="skill">Marketing Strategy</div>
+
+        <div class="skill">A/B Testing</div>
+
+        <div class="skill">Data-Driven Decision Making</div>
+
+    </div>
 
 </section>
 
-<section id="contact">
+<section class="contact" id="contact">
 
-<h2>Contact</h2>
+    <h2>Let's Connect</h2>
 
-<p>I’m currently building my career in digital marketing and open to opportunities to learn, contribute, and grow.</p>
+    <p>
+
+        I’m currently building my career in digital marketing and
+
+        interested in opportunities where I can analyze problems,
+
+        contribute to marketing strategy, and continue developing
+
+        my skills.
+
+    </p>
 
 </section>
 
 <footer>
 
-<p>© 2026 Irene Iba | Digital Marketing Portfolio</p>
+    <p>© 2026 Irene Iba | Digital Marketing Portfolio</p>
 
 </footer>
 
